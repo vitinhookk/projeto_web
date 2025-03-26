@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iNovaTech</title>
+    <link rel="icon" href="imagem/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist.aos.css " rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>   
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html"><img src="imagem/logo.png" alt="Logo" width="100" height="100"></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="produto.html">Produtos</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+        </ul>
+    </nav>
+    
+</header>
+
+<section class="Banner">
+    <div class="carousel">
+        <div class="custom-video-controls">
+            <video class="videoPlayer" id="video1" autoplay muted>
+                <source src="video/banner1.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <div class="volume-control" onclick="toggleMute()">
+                <i class="fas fa-volume-mute" id="volumeIcon"></i>
+            </div>
+        </div>
+    
+        <div class="progress-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+</section>
+
+
+
+<section class="Sobre">
+    <div class="sobre-conteudo container">
+    </div>
+    <div data-aos="fade-up" class="sobre-descricao1">
+        <h2 class="tittleh2"><strong>Superfino. Superleve. <br>Superchip M3.</strong></h2>
+        <p class="int">
+            <strong class="s1">O MacBook Air</strong> arrasa tanto no trabalho quanto na diversão, e o 
+            <strong class="s1">chip M3</strong> traz recursos ainda melhores para o notebook mais<br> 
+            popular do mundo. São até 18 horas de bateria2 para você levar o MacBook Air para todo lugar e voar em qualquer tarefa.
+        </p>
+        <br>
+        <p class="price"><strong>MacBook Air com chip M3 a partir de R$ 1.166,58/mês ou 13.999*</strong></p>
+        <p class="price"><strong>MacBook Air com chip M2 a partir de R$ 1.041,58/mês ou  12.499*</strong></p>
+    </div>
+</section>
+
+
+
+<p class="Subtitulo"><strong>DESIGN PORTÁTIL</strong></p>
+<section>
+    <div data-aos="fade-up">
+        <h2 class="tittle">Feito para acompanhar você.</h2>
+        <video class="Mac" id="video1" autoplay muted>
+            <source src="video/mac.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+    <div data-aos="fade-up" class="sobre-descricao">
+        <p class="int2">
+            <strong class="s12">Superleve e com cerca de 11 mm de espessura,</strong> o MacBook Air se encaixa facilmente na sua vida e na vida do planeta. <br>
+            O modelo com M3 é o primeiro computador Apple a utilizar 50% de materiais reciclados. <br> Além disso, os notebooks MacBook Air têm estrutura resistente de alumínio reciclado.
+        </p>
+    </div>
+    <div data-aos="fade-up" class="image">
+        <img src="imagem/mac - pol..png" alt="Polegadas MacBook">
+        <div class="banner">
+            <a href="#" class="ver-mais">Ver Mais</a>
+            <a href="#" class="ver-mais2">Ver Mais</a>
+        </div>
+    </div>   
+</section>
+<p class="int2">
+    <strong data-aos="fade-up" class="s12">Em dois tamanhos perfeitos e portáteis.</strong>  O modelo de 13 polegadas é o melhor notebook para levar com você, <br> e o de 15 polegadas tem mais área de trabalho na tela para multitarefa.
+</p>
+<section>  
+    
+    <div data-aos="fade-up" class="page-container">
+    
+    <div data-aos="fade-up" class="slideshow-container">
+        
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4"> 
+
+        <div class="slides">
+            <div class="slide">
+                <img src="imagem/Meia-Noite.png" alt="Produto Cor 1">
+            </div>
+            <div class="slide">
+                <img src="imagem/Estelar.png" alt="Produto Cor 2">
+            </div>
+            <div class="slide">
+                <img src="imagem/Cinza-espacial.png" alt="Produto Cor 3">
+            </div>
+            <div class="slide">
+                <img src="imagem/Prateado.png" alt="Produto Cor 4">
+            </div>
+        </div>
+        
+        <div class="dots-container1">
+            <label for="slide1" class="dot1"></label>
+            <label for="slide2" class="dot2"></label>
+            <label for="slide3" class="dot3"></label>
+            <label for="slide4" class="dot4"></label>
+            
+        </div>
+    </div>
+</div>
+<p class="s123"><strong>Quatro cores lindas.</strong> As opções são incríveis, e cada uma vem com o <br> cabo MagSafe na mesma cor para combinar.</p>
+</section>
+
+
+
+<!-- JAVA -->
+        <script>
+            const videoPlayer = document.getElementById("video1");
+            const volumeIcon = document.getElementById("volumeIcon");
+            const dots = document.querySelectorAll(".dot");
+            let slideIndex = 1;
+            const videos = [
+                "video/banner1.mp4",
+                "video/banner2.mp4",
+                "video/banner3.mp4",
+            ];
+        
+        
+            function showSlides(n) {
+                if (n > videos.length) { slideIndex = 1; }
+                if (n < 1) { slideIndex = videos.length; }
+        
+                videoPlayer.classList.add('fade');
+                
+                videoPlayer.src = videos[slideIndex - 1];
+                videoPlayer.load();
+                videoPlayer.play();
+        
+                dots.forEach(dot => dot.classList.remove("active"));
+                dots[slideIndex - 1].classList.add("active");
+        
+                setTimeout(() => {
+                    videoPlayer.classList.remove('fade');
+                }, 300);
+            }
+        
+            // Navegação pelos slides
+            function plusSlides(n) {
+                slideIndex += n;
+                if (slideIndex > videos.length) { slideIndex = 1; }
+                if (slideIndex < 1) { slideIndex = videos.length; }
+                showSlides(slideIndex);
+            }
+        
+            function currentSlide(n) {
+                slideIndex = n;
+                showSlides(slideIndex);
+            }
+        
+            
+            function toggleMute() {
+                videoPlayer.muted = !videoPlayer.muted;
+                volumeIcon.classList.toggle("fa-volume-up", !videoPlayer.muted);
+                volumeIcon.classList.toggle("fa-volume-mute", videoPlayer.muted);
+            }
+        
+            
+            videoPlayer.addEventListener("ended", () => {
+                slideIndex++;
+                if (slideIndex > videos.length) {
+                    slideIndex = 1;
+                }
+                showSlides(slideIndex);
+            });
+        
+            showSlides(slideIndex);
+        </script>
+
+<footer>
+    <section>
+    <div class="footer-content">
+        <p>© 2024 iNova
+Tech - Todos os direitos reservados.</p>
+    </div>
+    <nav></nav>
+    <div class="cabecalho-icones">
+        <a href="https://www.instagram.com/senaisuzano">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/senaisp.suzano">
+            <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.tiktok.com/tag/senai">
+            <i class="fa-brands fa-tiktok fa-2x"></i>
+        </a>
+    </div>
+    
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="icon" href="imagem/logo.png" type="image/png">
+    <link rel="stylesheet" href="styleC.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="imagem/logo.png" alt="Logo" width="100" height="100"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <main>
+        <section class="contact-form">
+            <h2>Fale Conosco</h2>
+            <form action="enviar-contato.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="problem">Descreva o problema:</label>
+                    <textarea id="problem" name="problem" rows="6" placeholder="Descreva seu problema ou dúvida aqui..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+       <iframe class="Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29258.625983918882!2d-46.34657138437499!3d-23.556651599999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce709cdd72cb8d%3A0xa0c48f485457b882!2sEscola%20SENAI%20%22Luis%20Eulalio%20de%20Bueno%20Vidigal%20Filho%22!5e0!3m2!1spt-BR!2sbr!4v1727889636504!5m2!1spt-BR!2sbr" width="1910" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        <a href="#"></a>
+        <script src="script.js"></script>
+        
+             <div class="rodape-icones">
+                <a href="https://www.instagram.com/senaisuzano/">
+                    <i class="fa-brands fa-instagram fa-2x"></i> </a> 
+                <a href="https://www.facebook.com/senaisp.suzano/"> 
+                    <i class="fa-brands fa-facebook fa-2x"></i> </a> 
+                <a href="https://www.tiktok.com/tag/senai"> 
+                    <i class="fa-brands fa-tiktok fa-2x"></i> </a> 
+                </div> 
+                <div class="cabecalho-logo" data-aos="fade-up" data-aos-delay="300">
+                    
+    
+                </div>
+                <div> 
+                    <img class="LogoR" src="imagem/logo.png" alt="Logo Loja"> 
+                </div> 
+                <div class="endereco">
+                    <p><a class="priv" href="privacidade.html">Política de Privacidade</a></p> 
+                <address> Rua Inácio Garcia, 321 - Cid. Edson - Suzano - SP<address> 
+                <p>Telefone: 11 4745-3513</p> 
+                <p class="U">Copyright 2024 | Wash Barbearia - Todos direitos reservados.</p> 
+            </div> 
+        <footer>
+</body>
+</html>
